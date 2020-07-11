@@ -2,3 +2,21 @@ body {
     background-color: black;
     color: white;
 }
+
+.container {
+    margin: 5%;
+}
+
+.left-column {
+    float: left;
+    width: 70%;
+}
+
+.right-column {
+    float: left;
+    width: 30%;
+}
+
+.right-column img {
+    float: right;
+}
