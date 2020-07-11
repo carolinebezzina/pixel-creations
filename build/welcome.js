@@ -58,7 +58,7 @@ class Welcome extends React.Component {
                                         <Link to='/aaron'>
                                             Aaron
                                             <br />
-                                            Programmer
+                                            Programmer / Character Artist
                                         </Link>
                                     </td>
                                 </tr>
