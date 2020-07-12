@@ -1,5 +1,5 @@
 import React from 'react';
-import BackToHome from '../backToHome.js';
+import BackToHome from '../common/backToHome.js';
 import History from './history.js';
 import Projects from './projects.js';
 import Now from './now.js';

@@ -6,7 +6,7 @@ import './index.css';
 import Welcome from './welcome.js';
 import Arthur from './Arthur/intro.js';
 import Caroline from './Caroline/intro.js';
-import Aaron from './Aaron/intro.js';
+import Aaron from './profiles/Aaron/intro.js';
 
 const routing = (
   <Router>
