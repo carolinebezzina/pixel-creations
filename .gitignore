@@ -107,3 +107,6 @@ dist
 .vscode-test
 .idea
 dist/
+
+# Other
+package-lock.json
