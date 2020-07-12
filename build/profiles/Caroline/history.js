@@ -1,5 +1,5 @@
 import React from 'react';
-import CarolineChildImage from '../images/caroline-child.jpg';
+import CarolineChildImage from '../../images/caroline-child.jpg';
 
 class History extends React.Component {
     constructor() {
@@ -20,7 +20,7 @@ class History extends React.Component {
                     <p>During and after uni I worked at an arcade called Playtime (now known as TimeZone). I performed customer service duties, as well as host children's birthday parties and perform some technical maintainance on arcade machines. Working with arcade games helped me learn the importance of different gaming aspects that keep the player engaged. Such as, if the game volume was too loud or quiet, or the movement and vibration functions of the machine were not functioning, it would easily cause the player to lose interest in the game. It was also interesting to see how children and adults would react differently to certain games.</p>
                 </div>
                 <div className="right-column">
-                    <img src={CarolineChildImage} width="300px" height="350px" />
+                    <img src={CarolineChildImage} width="250px" height="300px" />
                 </div>
             </div>
         );
