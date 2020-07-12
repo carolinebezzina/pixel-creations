@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import cookie from 'react-cookies';
+import CarolineProfileImage from './images/caroline-profile.jpg';
 
 class Welcome extends React.Component {
     constructor() {
@@ -52,23 +53,24 @@ class Welcome extends React.Component {
                                     <tr>
                                         <td>
                                             <Link to='/caroline'>
-                                                Caroline
+                                                <h2>Caroline</h2>
+                                                <img src={CarolineProfileImage} width="250px" height="250px" />
                                                 <br />
-                                                Programmer
+                                                <caption>Programmer</caption>
                                             </Link>
                                         </td>
                                         <td>
                                             <Link to='/arthur'>
-                                                Arthur
+                                                <h2>Arthur</h2>
                                                 <br />
-                                                Artist / Game Designer
+                                                <caption>Artist / Game Designer</caption>
                                             </Link>
                                         </td>
                                         <td>
                                             <Link to='/aaron'>
-                                                Aaron
+                                                <h2>Aaron</h2>
                                                 <br />
-                                                Programmer / Character Artist
+                                                <caption>Programmer / Character Artist</caption>
                                             </Link>
                                         </td>
                                     </tr>

@@ -1,5 +1,5 @@
 import React from 'react';
-import CarolineChildImage from '../images/caroline-child.jpg';
+import CarolineChildImage from '../../images/caroline-child.jpg';
 
 class History extends React.Component {
     constructor() {
