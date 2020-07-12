@@ -1,16 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import cookie from 'react-cookies';
 
 class Welcome extends React.Component {
     constructor() {
         super();
         this.state = {
-            userIntroduced: false,
-            usersName: '',
+            userIntroduced: cookie.load('usersName') !== '',
+            usersName: cookie.load('usersName'),
             errors: false
         };
 
         this.introduceUser = this.introduceUser.bind(this);
+    }
+
+    componentWillMount() {
+        if (cookie.load('usersName') === undefined) {
+            cookie.save('usersName', '', { path: '/' });
+        }
     }
 
     handleChange(e) {
@@ -21,17 +28,19 @@ class Welcome extends React.Component {
 
     introduceUser() {
         const { usersName } = this.state;
-        if (usersName === '') {
+
+        if (usersName === '' || usersName === null) {
             this.setState({ errors: true });
         } else {
             this.setState({ userIntroduced: true });
+            cookie.save('usersName', usersName, { path: '/' });
         }
     }
 
     render() {
         const { userIntroduced, usersName, errors } = this.state;
         return (
-            <div>
+            <div className="container">
                 {userIntroduced
                     ? (
                         <div>
@@ -39,29 +48,31 @@ class Welcome extends React.Component {
                             <h2>Pleased to meet you.</h2>
                             <p>Who would you like to learn about?</p>
                             <table>
-                                <tr>
-                                    <td>
-                                        <Link to='/caroline'>
-                                            Caroline
-                                            <br />
-                                            Programmer
-                                        </Link>
-                                    </td>
-                                    <td>
-                                        <Link to='/arthur'>
-                                            Arthur
-                                            <br />
-                                            Artist / Game Designer
-                                        </Link>
-                                    </td>
-                                    <td>
-                                        <Link to='/aaron'>
-                                            Aaron
-                                            <br />
-                                            Programmer / Character Artist
-                                        </Link>
-                                    </td>
-                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <Link to='/caroline'>
+                                                Caroline
+                                                <br />
+                                                Programmer
+                                            </Link>
+                                        </td>
+                                        <td>
+                                            <Link to='/arthur'>
+                                                Arthur
+                                                <br />
+                                                Artist / Game Designer
+                                            </Link>
+                                        </td>
+                                        <td>
+                                            <Link to='/aaron'>
+                                                Aaron
+                                                <br />
+                                                Programmer / Character Artist
+                                            </Link>
+                                        </td>
+                                    </tr>
+                                </tbody>
                             </table>
                         </div>
                     ) : (
