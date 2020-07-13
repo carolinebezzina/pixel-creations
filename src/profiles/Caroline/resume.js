@@ -31,7 +31,7 @@ class Resume extends React.Component {
         const { pageNumber, numPages } = this.state;
         return (
             <div>
-                <h1>Resume / Get in contact</h1>
+                <h1>Resume / Contact</h1>
                 <div className="left-column">
                     <h2 className="download-link"><a href={CarolineResumePDF} download>Download PDF</a></h2>
                     <img className="resume-image" src={CarolineResumeJPG1}></img>
