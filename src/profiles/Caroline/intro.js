@@ -4,7 +4,7 @@ import History from './history.js';
 import Projects from './projects.js';
 import Now from './now.js';
 import Resume from './resume.js';
-import CarolineCoffeeImage from '../../images/caroline-coffee.jpg';
+import CarolineCoffeeImage from '../../resources/caroline/caroline-coffee.jpg';
 
 class Caroline extends React.Component {
     constructor() {

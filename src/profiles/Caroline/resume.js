@@ -1,6 +1,7 @@
 import React from 'react';
-import { Document, Page } from 'react-pdf/dist/entry.webpack';
-import CarolineResume from '../../images/CarolineBezzinaResume.pdf';
+import CarolineResumeJPG1 from '../../resources/caroline/CarolineBezzinaResume.jpg'
+import CarolineResumeJPG2 from '../../resources/caroline/CarolineBezzinaResume2.jpg'
+import CarolineResumePDF from '../../resources/caroline/CarolineBezzinaResume.pdf';
 
 class Resume extends React.Component {
     constructor() {
@@ -26,34 +27,15 @@ class Resume extends React.Component {
         this.setState({ numPages });
     }
 
-    onLoadError = ({ error }) => {
-        console.log(error);
-    }
-
     render() {
         const { pageNumber, numPages } = this.state;
         return (
             <div>
                 <h1>Resume / Get in contact</h1>
                 <div className="left-column">
-                    <Document
-                        file={CarolineResume}
-                        onLoadSuccess={this.onDocumentLoadSuccess}
-                    >
-                        <Page
-                            pageNumber={1}
-                            scale={1.5}
-                        />
-                    </Document>
-                    <Document
-                        file={CarolineResume}
-                        onLoadSuccess={this.onDocumentLoadSuccess}
-                    >
-                        <Page
-                            pageNumber={2}
-                            scale={1.5}
-                        />
-                    </Document>
+                    <h2 className="download-link"><a href={CarolineResumePDF} download>Download PDF</a></h2>
+                    <img className="resume-image" src={CarolineResumeJPG1}></img>
+                    <img className="resume-image" src={CarolineResumeJPG2}></img>
                 </div>
                 <div className="right-column">
                     <div className="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="carolinebezzina">

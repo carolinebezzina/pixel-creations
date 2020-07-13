@@ -58,3 +58,13 @@ h2 {
 .LI-profile-badge {
     float: right;
 }
+
+.download-link {
+    text-align: right;
+    text-decoration: underline;
+}
+
+.resume-image {
+    max-width: 100%;
+    height: auto;
+}
