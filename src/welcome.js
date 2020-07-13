@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import cookie from 'react-cookies';
 import CarolineProfileImage from './resources/caroline/caroline-profile.jpg';
+import AaronProfileImage from './resources/aaron/aaron-profile.jpg';
 
 class Welcome extends React.Component {
     constructor() {
@@ -74,8 +75,14 @@ class Welcome extends React.Component {
                                         <td>
                                             <Link to='/aaron'>
                                                 <h2>Aaron</h2>
+                                                <img
+                                                    className="photo"
+                                                    src={AaronProfileImage}
+                                                    width="250px"
+                                                    height="250px"
+                                                />
                                                 <br />
-                                                <h3>Programmer / Character Artist</h3>
+                                                <h3>Programmer / 3D Modeler</h3>
                                             </Link>
                                         </td>
                                     </tr>
