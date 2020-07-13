@@ -25,8 +25,23 @@ class Caroline extends React.Component {
         this.setState({ resumeEnabled: resumeEnabled });
     }
 
+    enableSubSection(webDevEnabled, gameDevEnabled, tDModelingEnabled) {
+        this.setState({ webDevEnabled: webDevEnabled });
+        this.setState({ gameDevEnabled: gameDevEnabled });
+        this.setState({ tDModelingEnabled: tDModelingEnabled });
+    }
+
     render() {
-        const { historyEnabled, projectsEnabled, nowEnabled, resumeEnabled } = this.state;
+        const {
+            historyEnabled,
+            projectsEnabled,
+            nowEnabled,
+            resumeEnabled,
+            webDevEnabled,
+            gameDevEnabled,
+            tDModelingEnabled
+        } = this.state;
+
         return (
             <div>
                 <BackToHome />
@@ -53,14 +68,18 @@ class Caroline extends React.Component {
                         {projectsEnabled
                             ? (
                                 <div>
-                                    <button>Web Development</button>
-                                    <button>Game Development</button>
-                                    <button>3D Modeling</button>
+                                    <button onClick={() => this.enableSubSection(true, false, false)}>Web Development</button>
+                                    <button onClick={() => this.enableSubSection(false, true, false)}>Game Development</button>
+                                    <button onClick={() => this.enableSubSection(false, false, true)}>3D Modeling</button>
                                 </div>
                             ) : null}
                     </div>
                     {historyEnabled ? <History /> : null}
-                    {projectsEnabled ? <Projects /> : null}
+                    {projectsEnabled ? <Projects
+                        webDevEnabled={webDevEnabled}
+                        gameDevEnabled={gameDevEnabled}
+                        tDModelingEnabled={tDModelingEnabled}
+                    /> : null}
                     {nowEnabled ? <Now /> : null}
                     {resumeEnabled ? <Resume /> : null}
                 </div>

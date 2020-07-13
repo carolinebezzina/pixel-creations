@@ -1,28 +1,32 @@
 {
   "files": {
     "main.css": "/static/css/main.8961bd2b.chunk.css",
-    "main.js": "/static/js/main.da1fad30.chunk.js",
-    "main.js.map": "/static/js/main.da1fad30.chunk.js.map",
+    "main.js": "/static/js/main.c85604f3.chunk.js",
+    "main.js.map": "/static/js/main.c85604f3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.db0d703c.js",
     "runtime-main.js.map": "/static/js/runtime-main.db0d703c.js.map",
-    "static/js/2.365784d6.chunk.js": "/static/js/2.365784d6.chunk.js",
-    "static/js/2.365784d6.chunk.js.map": "/static/js/2.365784d6.chunk.js.map",
+    "static/css/2.2a3615c6.chunk.css": "/static/css/2.2a3615c6.chunk.css",
+    "static/js/2.cb8d6d27.chunk.js": "/static/js/2.cb8d6d27.chunk.js",
+    "static/js/2.cb8d6d27.chunk.js.map": "/static/js/2.cb8d6d27.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d37dcb1e07e3c46ab412bde82c65d13d.js": "/precache-manifest.d37dcb1e07e3c46ab412bde82c65d13d.js",
+    "precache-manifest.accc36921507255bfd9957923e64ceac.js": "/precache-manifest.accc36921507255bfd9957923e64ceac.js",
     "service-worker.js": "/service-worker.js",
+    "static/css/2.2a3615c6.chunk.css.map": "/static/css/2.2a3615c6.chunk.css.map",
     "static/css/main.8961bd2b.chunk.css.map": "/static/css/main.8961bd2b.chunk.css.map",
-    "static/js/2.365784d6.chunk.js.LICENSE.txt": "/static/js/2.365784d6.chunk.js.LICENSE.txt",
+    "static/js/2.cb8d6d27.chunk.js.LICENSE.txt": "/static/js/2.cb8d6d27.chunk.js.LICENSE.txt",
     "static/media/CarolineBezzinaResume.pdf": "/static/media/CarolineBezzinaResume.406bae04.pdf",
     "static/media/CarolineBezzinaResume.jpg": "/static/media/CarolineBezzinaResume.cc72f5a4.jpg",
     "static/media/CarolineBezzinaResume2.jpg": "/static/media/CarolineBezzinaResume2.dbc3e92b.jpg",
+    "static/media/aaron-profile.jpg": "/static/media/aaron-profile.04376b35.jpg",
     "static/media/caroline-child.jpg": "/static/media/caroline-child.817230ce.jpg",
     "static/media/caroline-coffee.jpg": "/static/media/caroline-coffee.9cea22bd.jpg",
     "static/media/caroline-profile.jpg": "/static/media/caroline-profile.9987ac6b.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.db0d703c.js",
-    "static/js/2.365784d6.chunk.js",
+    "static/css/2.2a3615c6.chunk.css",
+    "static/js/2.cb8d6d27.chunk.js",
     "static/css/main.8961bd2b.chunk.css",
-    "static/js/main.da1fad30.chunk.js"
+    "static/js/main.c85604f3.chunk.js"
   ]
 }
