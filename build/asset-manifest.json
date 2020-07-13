@@ -1,29 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.17d593c1.chunk.css",
-    "main.js": "/static/js/main.0c7f56ca.chunk.js",
-    "main.js.map": "/static/js/main.0c7f56ca.chunk.js.map",
+    "main.css": "/static/css/main.8961bd2b.chunk.css",
+    "main.js": "/static/js/main.da1fad30.chunk.js",
+    "main.js.map": "/static/js/main.da1fad30.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.db0d703c.js",
     "runtime-main.js.map": "/static/js/runtime-main.db0d703c.js.map",
-    "static/js/2.70f4e109.chunk.js": "/static/js/2.70f4e109.chunk.js",
-    "static/js/2.70f4e109.chunk.js.map": "/static/js/2.70f4e109.chunk.js.map",
-    "e60b15daa51dd5ca873c.worker.js": "/e60b15daa51dd5ca873c.worker.js",
-    "e60b15daa51dd5ca873c.worker.js.LICENSE.txt": "/e60b15daa51dd5ca873c.worker.js.LICENSE.txt",
-    "e60b15daa51dd5ca873c.worker.js.map": "/e60b15daa51dd5ca873c.worker.js.map",
+    "static/js/2.365784d6.chunk.js": "/static/js/2.365784d6.chunk.js",
+    "static/js/2.365784d6.chunk.js.map": "/static/js/2.365784d6.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.7b401b990d86d580af51ae12acb61421.js": "/precache-manifest.7b401b990d86d580af51ae12acb61421.js",
+    "precache-manifest.d37dcb1e07e3c46ab412bde82c65d13d.js": "/precache-manifest.d37dcb1e07e3c46ab412bde82c65d13d.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.17d593c1.chunk.css.map": "/static/css/main.17d593c1.chunk.css.map",
-    "static/js/2.70f4e109.chunk.js.LICENSE.txt": "/static/js/2.70f4e109.chunk.js.LICENSE.txt",
+    "static/css/main.8961bd2b.chunk.css.map": "/static/css/main.8961bd2b.chunk.css.map",
+    "static/js/2.365784d6.chunk.js.LICENSE.txt": "/static/js/2.365784d6.chunk.js.LICENSE.txt",
     "static/media/CarolineBezzinaResume.pdf": "/static/media/CarolineBezzinaResume.406bae04.pdf",
+    "static/media/CarolineBezzinaResume.jpg": "/static/media/CarolineBezzinaResume.cc72f5a4.jpg",
+    "static/media/CarolineBezzinaResume2.jpg": "/static/media/CarolineBezzinaResume2.dbc3e92b.jpg",
     "static/media/caroline-child.jpg": "/static/media/caroline-child.817230ce.jpg",
     "static/media/caroline-coffee.jpg": "/static/media/caroline-coffee.9cea22bd.jpg",
     "static/media/caroline-profile.jpg": "/static/media/caroline-profile.9987ac6b.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.db0d703c.js",
-    "static/js/2.70f4e109.chunk.js",
-    "static/css/main.17d593c1.chunk.css",
-    "static/js/main.0c7f56ca.chunk.js"
+    "static/js/2.365784d6.chunk.js",
+    "static/css/main.8961bd2b.chunk.css",
+    "static/js/main.da1fad30.chunk.js"
   ]
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import cookie from 'react-cookies';
-import CarolineProfileImage from './images/caroline-profile.jpg';
+import CarolineProfileImage from './resources/caroline/caroline-profile.jpg';
 
 class Welcome extends React.Component {
     constructor() {
