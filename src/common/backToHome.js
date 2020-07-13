@@ -1,10 +1,10 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class BackToHome extends React.Component {
     render() {
         return (
-            <Link to="/">Back To Home</Link>
+            <Link to="/">&#x2B05; Back to Home &#x1F3E0;</Link>
         );
     }
 }

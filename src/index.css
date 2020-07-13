@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-image: linear-gradient(to bottom, black, #202020);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -11,6 +11,10 @@ body {
 .left-column {
     float: left;
     width: 70%;
+}
+
+.left-column p {
+    max-width: 80%;
 }
 
 .right-column {
@@ -28,9 +32,10 @@ td {
     text-decoration: none;
 }
 
-td caption {
+td h3 {
     padding-top: 15px;
     text-transform: uppercase;
+    font-weight: normal;
 }
 
 a {
@@ -38,6 +43,18 @@ a {
     color: inherit;
 }
 
-td img {
+.photo {
     border-radius: 25px;
+}
+
+h1 {
+    color: #66FCF1;
+}
+
+h2 {
+    color: #FFFFFF;
+}
+
+.LI-profile-badge {
+    float: right;
 }

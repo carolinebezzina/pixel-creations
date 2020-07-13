@@ -54,23 +54,28 @@ class Welcome extends React.Component {
                                         <td>
                                             <Link to='/caroline'>
                                                 <h2>Caroline</h2>
-                                                <img src={CarolineProfileImage} width="250px" height="250px" />
+                                                <img
+                                                    className="photo"
+                                                    src={CarolineProfileImage}
+                                                    width="250px"
+                                                    height="250px"
+                                                />
                                                 <br />
-                                                <caption>Programmer</caption>
+                                                <h3>Programmer</h3>
                                             </Link>
                                         </td>
                                         <td>
                                             <Link to='/arthur'>
                                                 <h2>Arthur</h2>
                                                 <br />
-                                                <caption>Artist / Game Designer</caption>
+                                                <h3>Artist / Game Designer</h3>
                                             </Link>
                                         </td>
                                         <td>
                                             <Link to='/aaron'>
                                                 <h2>Aaron</h2>
                                                 <br />
-                                                <caption>Programmer / Character Artist</caption>
+                                                <h3>Programmer / Character Artist</h3>
                                             </Link>
                                         </td>
                                     </tr>

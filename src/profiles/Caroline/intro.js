@@ -41,7 +41,7 @@ class Caroline extends React.Component {
                         </div>
 
                         <div className="right-column">
-                            <img src={CarolineCoffeeImage} width="270px" height="300px" />
+                            <img className="photo" src={CarolineCoffeeImage} width="270px" height="300px" />
                         </div>
 
                         <div>
