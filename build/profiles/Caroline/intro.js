@@ -25,21 +25,12 @@ class Caroline extends React.Component {
         this.setState({ resumeEnabled: resumeEnabled });
     }
 
-    enableSubSection(webDevEnabled, gameDevEnabled, tDModelingEnabled) {
-        this.setState({ webDevEnabled: webDevEnabled });
-        this.setState({ gameDevEnabled: gameDevEnabled });
-        this.setState({ tDModelingEnabled: tDModelingEnabled });
-    }
-
     render() {
         const {
             historyEnabled,
             projectsEnabled,
             nowEnabled,
             resumeEnabled,
-            webDevEnabled,
-            gameDevEnabled,
-            tDModelingEnabled
         } = this.state;
 
         return (
@@ -60,26 +51,14 @@ class Caroline extends React.Component {
                         </div>
 
                         <div>
-                            <button onClick={() => this.enableSection(true, false, false, false)}>My history</button>
-                            <button onClick={() => this.enableSection(false, true, false, false)}>Early projects</button>
-                            <button onClick={() => this.enableSection(false, false, true, false)}>What I'm up to now</button>
-                            <button onClick={() => this.enableSection(false, false, false, true)}>Resume / Get in contact</button>
+                            <button onClick={() => this.enableSection(true, false, false, false)}>History</button>
+                            <button onClick={() => this.enableSection(false, true, false, false)}>Projects</button>
+                            <button onClick={() => this.enableSection(false, false, true, false)}>Now</button>
+                            <button onClick={() => this.enableSection(false, false, false, true)}>Resume / Contact</button>
                         </div>
-                        {projectsEnabled
-                            ? (
-                                <div>
-                                    <button onClick={() => this.enableSubSection(true, false, false)}>Web Development</button>
-                                    <button onClick={() => this.enableSubSection(false, true, false)}>Game Development</button>
-                                    <button onClick={() => this.enableSubSection(false, false, true)}>3D Modeling</button>
-                                </div>
-                            ) : null}
                     </div>
                     {historyEnabled ? <History /> : null}
-                    {projectsEnabled ? <Projects
-                        webDevEnabled={webDevEnabled}
-                        gameDevEnabled={gameDevEnabled}
-                        tDModelingEnabled={tDModelingEnabled}
-                    /> : null}
+                    {projectsEnabled ? <Projects /> : null}
                     {nowEnabled ? <Now /> : null}
                     {resumeEnabled ? <Resume /> : null}
                 </div>
