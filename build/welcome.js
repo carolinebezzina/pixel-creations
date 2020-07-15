@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import cookie from 'react-cookies';
 import CarolineProfileImage from './resources/caroline/caroline-profile.jpg';
+import ArthurProfileImage from './resources/arthur/arthur-profile.jpg';
 import AaronProfileImage from './resources/aaron/aaron-profile.jpg';
 
 class Welcome extends React.Component {
@@ -45,7 +46,7 @@ class Welcome extends React.Component {
             <div className="container">
                 {userIntroduced
                     ? (
-                        <div>
+                        <div className="centered">
                             <h1>Hello {usersName}!</h1>
                             <h2>Pleased to meet you.</h2>
                             <p>Who would you like to learn about?</p>
@@ -61,14 +62,18 @@ class Welcome extends React.Component {
                                                     width="250px"
                                                     height="250px"
                                                 />
-                                                <br />
                                                 <h3>Programmer</h3>
                                             </Link>
                                         </td>
                                         <td>
                                             <Link to='/arthur'>
                                                 <h2>Arthur</h2>
-                                                <br />
+                                                <img
+                                                    className="photo"
+                                                    src={ArthurProfileImage}
+                                                    width="250px"
+                                                    height="250px"
+                                                />
                                                 <h3>Artist / Game Designer</h3>
                                             </Link>
                                         </td>
@@ -81,7 +86,6 @@ class Welcome extends React.Component {
                                                     width="250px"
                                                     height="250px"
                                                 />
-                                                <br />
                                                 <h3>Programmer / 3D Modeler</h3>
                                             </Link>
                                         </td>
@@ -90,7 +94,7 @@ class Welcome extends React.Component {
                             </table>
                         </div>
                     ) : (
-                        <div>
+                        <div className="centered">
                             <h1>Welcome!</h1>
                             <h2>Before we begin, please enter your first name.</h2>
                             <p>Hi, my name is&nbsp;&nbsp;
