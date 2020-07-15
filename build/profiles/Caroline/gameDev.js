@@ -8,8 +8,8 @@ import Competition3 from '../../resources/caroline/gameDev/comp3.jpg';
 
 const TOSImages = [
     {
-        original: '../../resources/caroline/gameDev/TOS1.jpg',
-        thumbnail: '../../resources/caroline/gameDev/TOS1.jpg',
+        original: '../../resources/caroline/gameDev/tos1.jpg',
+        thumbnail: '../../resources/caroline/gameDev/tos1.jpg',
     },
     {
         original: '../../resources/caroline/gameDev/tos2.jpg',
