@@ -49,7 +49,7 @@ class Welcome extends React.Component {
                             <h1>Hello {usersName}!</h1>
                             <h2>Pleased to meet you.</h2>
                             <p>Who would you like to learn about?</p>
-                            <table>
+                            <table className="profile-grid">
                                 <tbody>
                                     <tr>
                                         <td>
