@@ -56,8 +56,8 @@ class Contact extends React.Component {
                 </div>
                 <div className="right-column">
                     <h1 className="right-align">Contact</h1>
-                    <p className="right-align">Email: Mairs.arthur@gmail.com</p>
-                    <p className="right-align">Instagram: OddsandBobsCreations</p>
+                    <p className="right-align">Email: <a className="link" href="mailto:Mairs.arthur@gmail.com">Mairs.arthur@gmail.com</a></p>
+                    <p className="right-align">Instagram: <a className="link" target="_blank" href="https://www.instagram.com/oddsandbobscreations">OddsandBobsCreations</a></p>
                 </div>
             </div>
         );
