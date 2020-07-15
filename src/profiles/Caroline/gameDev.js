@@ -12,16 +12,16 @@ const TOSImages = [
         thumbnail: '../../resources/caroline/gameDev/TOS1.jpg',
     },
     {
-        original: '../../resources/caroline/gameDev/TOS2.jpg',
-        thumbnail: '../../resources/caroline/gameDev/TOS2.jpg',
+        original: '../../resources/caroline/gameDev/tos2.jpg',
+        thumbnail: '../../resources/caroline/gameDev/tos2.jpg',
     },
     {
-        original: '../../resources/caroline/gameDev/TOS3.jpg',
-        thumbnail: '../../resources/caroline/gameDev/TOS3.jpg',
+        original: '../../resources/caroline/gameDev/tos3.jpg',
+        thumbnail: '../../resources/caroline/gameDev/tos3.jpg',
     },
     {
-        original: '../../resources/caroline/gameDev/TOS4.jpg',
-        thumbnail: '../../resources/caroline/gameDev/TOS4.jpg',
+        original: '../../resources/caroline/gameDev/tos4.jpg',
+        thumbnail: '../../resources/caroline/gameDev/tos4.jpg',
     }
 ];
 
