@@ -26,6 +26,10 @@ body {
     float: right;
 }
 
+.profile-grid {
+    width: 100%;
+}
+
 .profile-grid td {
     padding: 15px;
     text-align: center;
@@ -96,4 +100,8 @@ h3 {
 
 .image-gallery {
     clear: both;
+}
+
+.centered {
+    text-align: center;
 }
