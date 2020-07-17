@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
+import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 
@@ -29,24 +29,16 @@ const theme = createMuiTheme({
 
 const routing = (
   <ThemeProvider theme={theme}>
-    <Router>
+    <BrowserRouter>
       <Container maxWidth="lg">
         <Switch>
-          <Route path="/arthur">
-            <Arthur />
-          </Route>
-          <Route path="/caroline">
-            <Caroline />
-          </Route>
-          <Route path="/aaron">
-            <Aaron />
-          </Route>
-          <Route exact path="/">
-            <Welcome />
-          </Route>
+          <Route path="/caroline" component={Caroline} />
+          <Route path="/arthur" component={Arthur} />
+          <Route path="/aaron" component={Aaron} />
+          <Route exact path="/" component={Welcome} />
         </Switch>
       </Container>
-    </Router>
+    </BrowserRouter>
   </ThemeProvider>
 );
 

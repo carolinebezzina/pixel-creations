@@ -21,5 +21,6 @@ module.exports = {
       { test: /\.css$/, loader: "style-loader!css-loader" }
     ]
   },
-  plugins: [new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'src', 'index.html') })]
+  plugins: [new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'src', 'index.html') })],
+  historyApiFallback: true
 };
