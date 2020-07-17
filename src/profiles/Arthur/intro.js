@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
+import ButtonGroup from '@material-ui/core/ButtonGroup';
 
 import BackToHome from '../../common/backToHome.js';
 import History from './history.js';
@@ -37,10 +38,10 @@ class Arthur extends React.Component {
         return (
             <div>
                 <BackToHome />
-                <div className="container">
+                <div>
                     <h1>Arthur</h1>
                     <p></p>
-                    <div>
+                    <ButtonGroup color="secondary" aria-label="outlined secondary button group">
                         <Button
                             variant="outlined"
                             color="secondary"
@@ -69,7 +70,7 @@ class Arthur extends React.Component {
                         >
                             Contact
                         </Button>
-                    </div>
+                    </ButtonGroup>
                     {historyEnabled ? <History /> : null}
                     {skillsEnabled ? <Skills /> : null}
                     {portfolioEnabled ? <Portfolio /> : null}

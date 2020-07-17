@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import cookie from 'react-cookies';
 import Button from '@material-ui/core/Button';
+import Grid from '@material-ui/core/Grid';
 
 import CarolineProfileImage from './resources/caroline/caroline-profile.jpg';
 import ArthurProfileImage from './resources/arthur/arthur-profile.jpg';
@@ -46,56 +47,55 @@ class Welcome extends React.Component {
         const { userIntroduced, usersName, errors } = this.state;
 
         return (
-            <div className="container">
+            <div>
                 {userIntroduced
                     ? (
-                        <div className="centered">
-                            <h1>Hello {usersName}!</h1>
-                            <h2>Pleased to meet you.</h2>
-                            <p>Who would you like to learn about?</p>
-                            <table className="profile-grid">
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <Link to='/caroline'>
-                                                <h2>Caroline</h2>
-                                                <img
-                                                    className="photo"
-                                                    src={CarolineProfileImage}
-                                                    width="250px"
-                                                    height="250px"
-                                                />
-                                                <Button variant="outlined" color="secondary">Programmer</Button>
-                                            </Link>
-                                        </td>
-                                        <td>
-                                            <Link to='/arthur'>
-                                                <h2>Arthur</h2>
-                                                <img
-                                                    className="photo"
-                                                    src={ArthurProfileImage}
-                                                    width="250px"
-                                                    height="250px"
-                                                />
-                                                <Button variant="outlined" color="secondary">Artist / Game Designer</Button>
-                                            </Link>
-                                        </td>
-                                        <td>
-                                            <Link to='/aaron'>
-                                                <h2>Aaron</h2>
-                                                <img
-                                                    className="photo"
-                                                    src={AaronProfileImage}
-                                                    width="250px"
-                                                    height="250px"
-                                                />
-                                                <Button variant="outlined" color="secondary">Programmer / 3D Modeler</Button>
-                                            </Link>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <Grid container spacing={1} className="centered">
+                            <Grid item xs={12}>
+                                <h1>Hello {usersName}!</h1>
+                                <h2>Pleased to meet you.</h2>
+                                <p>Who would you like to learn about?</p>
+                            </Grid>
+                            <Grid item xs={4}>
+                                <Link to='/caroline'>
+                                    <h2>Caroline</h2>
+                                    <img
+                                        className="photo"
+                                        src={CarolineProfileImage}
+                                        width="250px"
+                                        height="250px"
+                                    />
+                                    <br /><br />
+                                    <Button variant="outlined" color="secondary">Programmer</Button>
+                                </Link>
+                            </Grid>
+                            <Grid item xs={4}>
+                                <Link to='/arthur'>
+                                    <h2>Arthur</h2>
+                                    <img
+                                        className="photo"
+                                        src={ArthurProfileImage}
+                                        width="250px"
+                                        height="250px"
+                                    />
+                                    <br /><br />
+                                    <Button variant="outlined" color="secondary">Artist / Game Designer</Button>
+                                </Link>
+                            </Grid>
+                            <Grid item xs={4}>
+                                <Link to='/aaron'>
+                                    <h2>Aaron</h2>
+                                    <img
+                                        className="photo"
+                                        src={AaronProfileImage}
+                                        width="250px"
+                                        height="250px"
+                                    />
+                                    <br /><br />
+                                    <Button variant="outlined" color="secondary">Programmer / 3D Modeler</Button>
+                                </Link>
+                            </Grid>
+                        </Grid>
                     ) : (
                         <div className="centered">
                             <h1>Welcome!</h1>

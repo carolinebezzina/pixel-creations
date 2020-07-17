@@ -1,4 +1,5 @@
 import React from 'react';
+import Grid from '@material-ui/core/Grid';
 import GitHubButton from 'react-github-btn';
 
 import CarolineResumeJPG1 from '../../resources/caroline/CarolineBezzinaResume.jpg'
@@ -22,19 +23,19 @@ class Resume extends React.Component {
 
     render() {
         return (
-            <div>
-                <div className="left-column">
+            <Grid container spacing={10}>
+                <Grid item xs={9}>
                     <h1>Resume</h1>
-                    <h3 className="link right-align"><a href={CarolineResumePDF} download>Download PDF</a></h3>
+                    <h3 className="link right-align">
+                        <a href={CarolineResumePDF} download>Download PDF</a>
+                    </h3>
                     <img className="resume-image" src={CarolineResumeJPG1}></img>
                     <img className="resume-image" src={CarolineResumeJPG2}></img>
-                </div>
-                <div className="right-column">
-                    <span className="right-align">
-                        <h1>Contact</h1>
-                        <p>Call me: <a className="link" href="tel:+61402377116">0402 377 116</a></p>
-                        <p>Email me: <a className="link" href="mailto:c_bezzina@hotmail.com">c_bezzina@hotmail.com</a></p>
-                    </span>
+                </Grid>
+                <Grid item xs={3}>
+                    <h1>Contact</h1>
+                    <p>Phone: <a className="link" href="tel:+61402377116">0402 377 116</a></p>
+                    <p>Email: <a className="link" href="mailto:c_bezzina@hotmail.com">c_bezzina@hotmail.com</a></p>
                     <div className="github-button">
                         <GitHubButton href="https://github.com/carolinebezzina" data-size="large" aria-label="Follow @carolinebezzina on GitHub">
                             Follow @carolinebezzina
@@ -45,8 +46,8 @@ class Resume extends React.Component {
                             Caroline Bezzina
                         </a>
                     </div>
-                </div>
-            </div>
+                </Grid>
+            </Grid>
         );
     }
 }

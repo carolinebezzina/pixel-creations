@@ -4,36 +4,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
-    margin: 2%;
-}
-
-.left-column {
-    float: left;
-    width: 70%;
-}
-
-.left-column p, li {
-    max-width: 80%;
-}
-
-.right-column {
-    float: left;
-    width: 30%;
-}
-
-.right-column img {
-    float: right;
-}
-
-.profile-grid {
-    width: 100%;
-}
-
-.profile-grid td {
-    padding: 15px;
-    text-align: center;
-    text-decoration: none;
+.instagram {
+    padding-top: 20px;
+    vertical-align: top;
 }
 
 a {
@@ -43,23 +16,10 @@ a {
 
 .photo {
     border-radius: 25px;
-    margin-bottom: 20px;
 }
 
-h1 {
-    color: #66FCF1;
-}
-
-h2 {
-    color: #FFFFFF;
-}
-
-.LI-profile-badge {
-    float: right;
-}
-
-.link {
-    text-decoration: underline;
+.menu {
+    margin-top: 20px;
 }
 
 .resume-image {
@@ -67,36 +27,27 @@ h2 {
     height: auto;
 }
 
+.github-button {
+    padding-bottom: 20px;
+}
+
+.link {
+    text-decoration: underline;
+}
+
 .right-align {
     text-align: right;
 }
 
-.instagram-table {
-    padding-top: 20px;
+.centered {
+    text-align: center;
 }
 
-.instagram-table td {
-    padding-right: 15px;
-    vertical-align: top;
-}
-
-.github-button {
-    float: right;
-    padding: 0px 0px 20px 20px;
-}
-
-.wallOfText {
-    max-width: 75%;
+h1 {
+    color: #66FCF1;
 }
 
 h3 {
     text-decoration: underline;
-}
-
-.image-gallery {
-    clear: both;
-}
-
-.centered {
-    text-align: center;
+    padding-top: 10px;
 }

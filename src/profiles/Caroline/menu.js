@@ -64,9 +64,9 @@ export default function MenuListComposition(props) {
                                     id="menu-list-grow"
                                     onKeyDown={handleListKeyDown}
                                 >
-                                    <MenuItem onClick={(event) => { handleClose(event); enableSubSection(true, false, false) }}>Web Development</MenuItem>
-                                    <MenuItem onClick={(event) => { handleClose(event); enableSubSection(false, true, false) }}>Game Development</MenuItem>
-                                    <MenuItem onClick={(event) => { handleClose(event); enableSubSection(false, false, true) }}>3D Modeling</MenuItem>
+                                    <MenuItem onClick={(event) => { handleClose(event); enableSection(false, false, false, false); enableSubSection(true, false, false) }}>Web Development</MenuItem>
+                                    <MenuItem onClick={(event) => { handleClose(event); enableSection(false, false, false, false); enableSubSection(false, true, false) }}>Game Development</MenuItem>
+                                    <MenuItem onClick={(event) => { handleClose(event); enableSection(false, false, false, false); enableSubSection(false, false, true) }}>3D Modeling</MenuItem>
                                 </MenuList>
                             </ClickAwayListener>
                         </Paper>
