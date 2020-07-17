@@ -34,7 +34,7 @@ class GameDev extends React.Component {
         return (
             <div>
                 <div className="left-column">
-                    <h2>Game Development</h2>
+                    <h1>Game Development</h1>
                     <h3>The Other Side</h3>
                     <p>During uni I completed a video game development unit which included participating in a competition against other students. The competition required me to build a video game in Unity and complete a 5 minute presentation of the game. I received full marks for my game, and it placed 3rd in the competition and I received an award by a representative from Wargaming.Net.</p>
                     <p>The game I created is a first-person story telling game called ‘The Other Side’. The idea behind this game is to step away from explosions, guns, blood, and gore, and instead explore a different aspect of gaming. This game is about immersing yourself into a story. There are very few existing games that are similar to this one. I am creating this game to prove that a story does not need to be read or watched and there is more to be experienced within a game.</p>

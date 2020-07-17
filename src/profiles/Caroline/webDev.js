@@ -86,7 +86,7 @@ class Projects extends React.Component {
     render() {
         return (
             <div>
-                <h2>Web Development</h2>
+                <h1>Web Development</h1>
                 {/* <ImageGallery items={nutritionCareImages} /> */}
                 <div className="wallOfText">
                     <p>I was a web and game development intern at 2and2. I contributed to two websites during my time there.</p>

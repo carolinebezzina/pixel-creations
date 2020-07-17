@@ -36,11 +36,6 @@ body {
     text-decoration: none;
 }
 
-.profile-grid td h3 {
-    text-transform: uppercase;
-    font-weight: normal;
-}
-
 a {
     text-decoration: none;
     color: inherit;

@@ -1,10 +1,14 @@
 import React from 'react';
+
 import BackToHome from '../../common/backToHome.js';
 import History from './history.js';
-import Projects from './projects.js';
+import WebDev from './webDev.js';
+import GameDev from './gameDev.js';
+import TDModeling from './tdModeling.js';
 import Now from './now.js';
 import Resume from './resume.js';
 import CarolineCoffeeImage from '../../resources/caroline/caroline-coffee.jpg';
+import MenuListComposition from './menu.js';
 
 class Caroline extends React.Component {
     constructor() {
@@ -12,10 +16,15 @@ class Caroline extends React.Component {
 
         this.state = {
             historyEnabled: false,
-            projectsEnabled: false,
+            webDevEnabled: false,
+            gameDevEnabled: false,
+            tDModelingEnabled: false,
             nowEnabled: false,
             resumeEnabled: false
         };
+
+        this.enableSection = this.enableSection.bind(this);
+        this.enableSubSection = this.enableSubSection.bind(this);
     }
 
     enableSection(historyEnabled, projectsEnabled, nowEnabled, resumeEnabled) {
@@ -25,12 +34,20 @@ class Caroline extends React.Component {
         this.setState({ resumeEnabled: resumeEnabled });
     }
 
+    enableSubSection(webDevEnabled, gameDevEnabled, tDModelingEnabled) {
+        this.setState({ webDevEnabled: webDevEnabled });
+        this.setState({ gameDevEnabled: gameDevEnabled });
+        this.setState({ tDModelingEnabled: tDModelingEnabled });
+    }
+
     render() {
         const {
             historyEnabled,
-            projectsEnabled,
+            webDevEnabled,
+            gameDevEnabled,
+            tDModelingEnabled,
             nowEnabled,
-            resumeEnabled,
+            resumeEnabled
         } = this.state;
 
         return (
@@ -45,20 +62,15 @@ class Caroline extends React.Component {
                             <p>On most mornings you're likely to find me wrapped up in a blanket with a large cup of coffee in hand (I'm more of a night-owl than a morning person). On weekends and evenings I like to binge watch TV shows or grab a great video game and play it for the fifth time. *cough* Skyrim *cough*</p>
                             <p>If you'd like to know a bit more about me, select a category below.</p>
                         </div>
-
                         <div className="right-column">
                             <img className="photo" src={CarolineCoffeeImage} width="270px" height="300px" />
                         </div>
-
-                        <div>
-                            <button onClick={() => this.enableSection(true, false, false, false)}>History</button>
-                            <button onClick={() => this.enableSection(false, true, false, false)}>Projects</button>
-                            <button onClick={() => this.enableSection(false, false, true, false)}>Now</button>
-                            <button onClick={() => this.enableSection(false, false, false, true)}>Resume / Contact</button>
-                        </div>
+                        <MenuListComposition enableSection={this.enableSection} enableSubSection={this.enableSubSection} />
                     </div>
                     {historyEnabled ? <History /> : null}
-                    {projectsEnabled ? <Projects /> : null}
+                    {webDevEnabled ? <WebDev /> : null}
+                    {gameDevEnabled ? <GameDev /> : null}
+                    {tDModelingEnabled ? <TDModeling /> : null}
                     {nowEnabled ? <Now /> : null}
                     {resumeEnabled ? <Resume /> : null}
                 </div>

@@ -58,7 +58,7 @@ class TDModeling extends React.Component {
         return (
             <div>
                 <div className="left-column">
-                    <h2>3D Modeling</h2>
+                    <h1>3D Modeling</h1>
                     <p>I've never been a very creative or artistic person, however I decided to buy a graphics tablet and create some 3D models using Blender just for fun! &#128516;</p>
                 </div>
                 <div className="image-gallery">

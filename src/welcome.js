@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import cookie from 'react-cookies';
+import Button from '@material-ui/core/Button';
+
 import CarolineProfileImage from './resources/caroline/caroline-profile.jpg';
 import ArthurProfileImage from './resources/arthur/arthur-profile.jpg';
 import AaronProfileImage from './resources/aaron/aaron-profile.jpg';
@@ -42,6 +44,7 @@ class Welcome extends React.Component {
 
     render() {
         const { userIntroduced, usersName, errors } = this.state;
+
         return (
             <div className="container">
                 {userIntroduced
@@ -62,7 +65,7 @@ class Welcome extends React.Component {
                                                     width="250px"
                                                     height="250px"
                                                 />
-                                                <h3>Programmer</h3>
+                                                <Button variant="outlined" color="secondary">Programmer</Button>
                                             </Link>
                                         </td>
                                         <td>
@@ -74,7 +77,7 @@ class Welcome extends React.Component {
                                                     width="250px"
                                                     height="250px"
                                                 />
-                                                <h3>Artist / Game Designer</h3>
+                                                <Button variant="outlined" color="secondary">Artist / Game Designer</Button>
                                             </Link>
                                         </td>
                                         <td>
@@ -86,7 +89,7 @@ class Welcome extends React.Component {
                                                     width="250px"
                                                     height="250px"
                                                 />
-                                                <h3>Programmer / 3D Modeler</h3>
+                                                <Button variant="outlined" color="secondary">Programmer / 3D Modeler</Button>
                                             </Link>
                                         </td>
                                     </tr>
@@ -99,7 +102,7 @@ class Welcome extends React.Component {
                             <h2>Before we begin, please enter your first name.</h2>
                             <p>Hi, my name is&nbsp;&nbsp;
                                 <input type="text" id="usersName" name="usersName" onChange={e => this.handleChange(e)}></input>&nbsp;
-                                <button onClick={this.introduceUser}>Wave &#9995;</button>
+                                <Button onClick={this.introduceUser} variant="outlined" color="secondary">Wave &#9995;</Button>
                             </p>
                             {errors ? <p>C'mon, don't be shy...</p> : null}
                         </div>

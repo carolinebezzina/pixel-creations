@@ -1,4 +1,6 @@
 import React from 'react';
+import Button from '@material-ui/core/Button';
+
 import BackToHome from '../../common/backToHome.js';
 import History from './history.js';
 import Skills from './skills.js';
@@ -39,10 +41,34 @@ class Arthur extends React.Component {
                     <h1>Arthur</h1>
                     <p></p>
                     <div>
-                        <button onClick={() => this.enableSection(true, false, false, false)}>History</button>
-                        <button onClick={() => this.enableSection(false, true, false, false)}>Skills</button>
-                        <button onClick={() => this.enableSection(false, false, true, false)}>Porfolio</button>
-                        <button onClick={() => this.enableSection(false, false, false, true)}>Contact</button>
+                        <Button
+                            variant="outlined"
+                            color="secondary"
+                            onClick={() => this.enableSection(true, false, false, false)}
+                        >
+                            History
+                        </Button>
+                        <Button
+                            variant="outlined"
+                            color="secondary"
+                            onClick={() => this.enableSection(false, true, false, false)}
+                        >
+                            Skills
+                        </Button>
+                        <Button
+                            variant="outlined"
+                            color="secondary"
+                            onClick={() => this.enableSection(false, false, true, false)}
+                        >
+                            Porfolio
+                        </Button>
+                        <Button
+                            variant="outlined"
+                            color="secondary"
+                            onClick={() => this.enableSection(false, false, false, true)}
+                        >
+                            Contact
+                        </Button>
                     </div>
                     {historyEnabled ? <History /> : null}
                     {skillsEnabled ? <Skills /> : null}
