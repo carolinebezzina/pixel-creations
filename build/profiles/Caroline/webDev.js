@@ -94,7 +94,7 @@ class Projects extends React.Component {
                     <h3>Department of Finance - GovCMS</h3>
                     <p>I first worked on a website called GovCMS for the Department of Finance, which I am unable to share screenshots of. I was told to mimic the colours, fonts and styling of their current website as closely as possible, and replicated them in the govCMS project using SCSS. I also implemented a video player using Videogular with AngularJS.</p>
                     <h3>Headspace - Food For Thought</h3>
-                    <p>The second project was a website called Food For Thought for Headspace. I was given a mockup of the design of the webpage, and needed to style the page accordingly using Jade and Less. Some of the functionality of the website also needed altering using CoffeeScript and AngularJS. The website is available to view at <a className="link" target="_blank" href="http://www.foodforthought.org.au/">www.foodforthought.org.au</a>.</p>
+                    <p>The second project was a website called Food For Thought for Headspace. I was given a mockup of the design of the webpage, and needed to style the page accordingly using Jade and Less. Some of the functionality of the website also needed altering using CoffeeScript and AngularJS.</p>
                     <br />
                 </Grid>
                 <Grid item xs={12}>
