@@ -58,11 +58,11 @@ class TDModeling extends React.Component {
     render() {
         return (
             <Grid container>
-                <Grid item xs={8}>
+                <Grid item xs={12} lg={8}>
                     <h1>3D Modeling</h1>
                     <p>I've never been a very creative or artistic person, however I decided to buy a graphics tablet and create some 3D models using Blender just for fun! &#128516;</p>
                 </Grid>
-                <Grid item xs={12}>
+                <Grid item xs={12} lg={12}>
                     <ImageGallery items={TDModelingImages} />
                 </Grid>
             </Grid>
