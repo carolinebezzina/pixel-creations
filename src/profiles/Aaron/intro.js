@@ -10,7 +10,7 @@ class Aaron extends React.Component {
 
     render() {
         return (
-            <Grid xs={8}>
+            <Grid xs={12} lg={8}>
                 <BackToHome />
                 <h1>Aaron</h1>
                 <p>Hello there! I'm Aaron, I hail from Queensland! I currently reside in Melbourne, Victoria.</p>

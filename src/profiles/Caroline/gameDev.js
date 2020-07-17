@@ -34,7 +34,7 @@ class GameDev extends React.Component {
     render() {
         return (
             <Grid container spacing={3}>
-                <Grid item xs={8}>
+                <Grid item xs={12} lg={8}>
                     <h1>Game Development</h1>
                     <h3>The Other Side</h3>
                     <p>During uni I completed a video game development unit which included participating in a competition against other students. The competition required me to build a video game in Unity and complete a 5 minute presentation of the game. I received full marks for my game, and it placed 3rd in the competition and I received an award by a representative from Wargaming.Net.</p>
@@ -53,14 +53,14 @@ class GameDev extends React.Component {
                     <p>Jack, James and Sam go on a hunting trip on Friday afternoon. They were planning to return on Sunday night, however Jack is shot, and killed, and James is arrested for his murder. Sam is the only one to return from the trip. When Sam returns, she notices a presence within the house, and soon recognises the presence as Jack’s ghost. Jack attempts to communicate with Sam, but can only do so in the form of memories. Sam realises that something is bothering Jack and he is trying to pass on a message to his daughter, Linda. It is Sam’s job to discover this message and find a way to pass this message on to Linda.</p>
                     <p>The player completes the game when they uncover all the main clues in the game and solve the mystery of Jack’s death.</p>
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={12} lg={4}>
                     <img className="photo" src={Competition1} width="400px" height="250px" />
                     <br /><br /><br />
                     <img className="photo" src={Competition2} width="400px" height="250px" />
                     <br /><br /><br />
                     <img className="photo" src={Competition3} width="400px" height="250px" />
                 </Grid>
-                <Grid item xs={12}>
+                <Grid item xs={12} lg={12}>
                     <ImageGallery items={TOSImages} />
                 </Grid>
             </Grid>

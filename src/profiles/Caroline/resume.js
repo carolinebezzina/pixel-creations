@@ -24,7 +24,7 @@ class Resume extends React.Component {
     render() {
         return (
             <Grid container spacing={10}>
-                <Grid item xs={9}>
+                <Grid item xs={12} lg={9}>
                     <h1>Resume</h1>
                     <h3 className="link right-align">
                         <a href={CarolineResumePDF} download>Download PDF</a>
@@ -32,7 +32,7 @@ class Resume extends React.Component {
                     <img className="resume-image" src={CarolineResumeJPG1}></img>
                     <img className="resume-image" src={CarolineResumeJPG2}></img>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={12} lg={3}>
                     <h1>Contact</h1>
                     <p>Phone: <a className="link" href="tel:+61402377116">0402 377 116</a></p>
                     <p>Email: <a className="link" href="mailto:c_bezzina@hotmail.com">c_bezzina@hotmail.com</a></p>

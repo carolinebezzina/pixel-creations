@@ -11,7 +11,7 @@ class History extends React.Component {
     render() {
         return (
             <Grid container spacing={10}>
-                <Grid item xs={9}>
+                <Grid item xs={12} lg={9}>
                     <h1>History</h1>
                     <p>My interest in programming technology began at a young age. I was always the most tech-savvy in my family, even though I am the youngest. During my primary school years I would play online kids games that built my problem solving skills. I was facinated by the online world and I remember asking my family how I could make my own website. Unfortunately my family did not know much about computers so they did not know how to help me.</p>
                     <p>Skipping ahead to high school, my interest for technology continued. During my free time I would experiment with altering CSS and personalising my old social media pages. When I was 14 I was involved in a state wide competition called ‘RoboCup Junior’. Groups of students from various schools around the state had the opportunity to build and program our own robot that would dance to music. The end goal of the project was to enter the competition in dance-off’s against the other state schools, which had a chance to go Australia wide.</p>
@@ -22,7 +22,7 @@ class History extends React.Component {
                     <p>During and after uni I worked at an arcade called Playtime (now known as Timezone). I performed customer service duties, as well as host children's birthday parties and perform some technical maintainance on arcade machines. Working with arcade games helped me learn the importance of different gaming aspects that keep the player engaged. Such as, if the game volume was too loud or quiet, or the movement and vibration functions of the machine were not functioning, it would easily cause the player to lose interest in the game. It was also interesting to see how children and adults would react differently to certain games.</p>
                     <p>Finally, before getting my first job as a software developer, I was a web and game development intern at 2and2. I contributed to three projects during my time there. I worked on a website called GovCMS for the Department of Finance, a website called Food For Thought for Headspace, and a game for the Cogniss app platform. This was my first step to experiencing what it was like being a developer in a small company.</p>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={12} lg={3}>
                     <img className="photo" src={CarolineChildImage} width="250px" height="300px" />
                 </Grid>
             </Grid>

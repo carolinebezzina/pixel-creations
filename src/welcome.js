@@ -51,12 +51,12 @@ class Welcome extends React.Component {
                 {userIntroduced
                     ? (
                         <Grid container spacing={1} className="centered">
-                            <Grid item xs={12}>
+                            <Grid item xs={12} lg={12}>
                                 <h1>Hello {usersName}!</h1>
                                 <h2>Pleased to meet you.</h2>
                                 <p>Who would you like to learn about?</p>
                             </Grid>
-                            <Grid item xs={4}>
+                            <Grid item xs={12} lg={4}>
                                 <Link to='/caroline'>
                                     <h2>Caroline</h2>
                                     <img
@@ -69,7 +69,7 @@ class Welcome extends React.Component {
                                     <Button variant="outlined" color="secondary">Programmer</Button>
                                 </Link>
                             </Grid>
-                            <Grid item xs={4}>
+                            <Grid item xs={12} lg={4}>
                                 <Link to='/arthur'>
                                     <h2>Arthur</h2>
                                     <img
@@ -82,7 +82,7 @@ class Welcome extends React.Component {
                                     <Button variant="outlined" color="secondary">Artist / Game Designer</Button>
                                 </Link>
                             </Grid>
-                            <Grid item xs={4}>
+                            <Grid item xs={12} lg={4}>
                                 <Link to='/aaron'>
                                     <h2>Aaron</h2>
                                     <img

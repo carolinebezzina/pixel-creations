@@ -55,7 +55,7 @@ class Caroline extends React.Component {
             <React.Fragment>
                 <BackToHome />
                 <Grid container spacing={10}>
-                    <Grid item xs={9}>
+                    <Grid item xs={12} lg={9}>
                         <h1>Caroline</h1>
                         <p>Hi there! My name is Caroline. I'm in my late 20's and I live in South Yarra, Victoria.</p>
                         <p>I've spent the last three and a half years working as a Software Developer. I'm currently looking for work in Melbourne or remotely as a software, web, or game developer.</p>
@@ -67,10 +67,10 @@ class Caroline extends React.Component {
                             enableSubSection={this.enableSubSection}
                         />
                     </Grid>
-                    <Grid item xs={3}>
+                    <Grid item xs={12} lg={3}>
                         <img className="photo" src={CarolineCoffeeImage} width="270px" height="300px" />
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid item xs={12} lg={12}>
                         {historyEnabled ? <History /> : null}
                         {webDevEnabled ? <WebDev /> : null}
                         {gameDevEnabled ? <GameDev /> : null}
