@@ -6,7 +6,7 @@ class BackToHome extends React.Component {
     render() {
         return (
             <Button
-                variant="outlined"
+                variant="text"
                 color="secondary">
                 <Link to="/">
                     &#x2B05; Back to Home &#x1F3E0;
