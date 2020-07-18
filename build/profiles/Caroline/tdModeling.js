@@ -1,4 +1,5 @@
 import React from 'react';
+import Grid from '@material-ui/core/Grid';
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 
@@ -56,15 +57,15 @@ class TDModeling extends React.Component {
 
     render() {
         return (
-            <div>
-                <div className="left-column">
-                    <h2>3D Modeling</h2>
+            <Grid container>
+                <Grid item xs={12} lg={8}>
+                    <h1>3D Modeling</h1>
                     <p>I've never been a very creative or artistic person, however I decided to buy a graphics tablet and create some 3D models using Blender just for fun! &#128516;</p>
-                </div>
-                <div className="image-gallery">
+                </Grid>
+                <Grid item xs={12} lg={12}>
                     <ImageGallery items={TDModelingImages} />
-                </div>
-            </div>
+                </Grid>
+            </Grid>
         );
     }
 }

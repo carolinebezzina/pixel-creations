@@ -1,4 +1,5 @@
 import React from 'react';
+import Grid from '@material-ui/core/Grid';
 import InstagramEmbed from 'react-instagram-embed';
 
 class Contact extends React.Component {
@@ -8,58 +9,26 @@ class Contact extends React.Component {
 
     render() {
         return (
-            <div>
-                <div className="left-column">
-                    <table className="instagram-table">
-                        <tr>
-                            <td>
-                                <InstagramEmbed
-                                    url='https://www.instagram.com/p/B9f530VDN8N/'
-                                    hideCaption={false}
-                                    containerTagName='div'
-                                    protocol=''
-                                    injectScript
-                                    onLoading={() => { }}
-                                    onSuccess={() => { }}
-                                    onAfterRender={() => { }}
-                                    onFailure={() => { }}
-                                />
-                            </td>
-                            <td>
-                                <InstagramEmbed
-                                    url='https://www.instagram.com/p/B8Vdd0CgpCN/'
-                                    hideCaption={false}
-                                    containerTagName='div'
-                                    protocol=''
-                                    injectScript
-                                    onLoading={() => { }}
-                                    onSuccess={() => { }}
-                                    onAfterRender={() => { }}
-                                    onFailure={() => { }}
-                                />
-                            </td>
-                            <td>
-                                <InstagramEmbed
-                                    url='https://www.instagram.com/p/B8VcGysgRaR/'
-                                    hideCaption={false}
-                                    containerTagName='div'
-                                    protocol=''
-                                    injectScript
-                                    onLoading={() => { }}
-                                    onSuccess={() => { }}
-                                    onAfterRender={() => { }}
-                                    onFailure={() => { }}
-                                />
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div className="right-column">
-                    <h1 className="right-align">Contact</h1>
-                    <p className="right-align">Email: <a className="link" href="mailto:Mairs.arthur@gmail.com">Mairs.arthur@gmail.com</a></p>
-                    <p className="right-align">Instagram: <a className="link" target="_blank" href="https://www.instagram.com/oddsandbobscreations">OddsandBobsCreations</a></p>
-                </div>
-            </div>
+            <Grid container spacing={3}>
+                <Grid item xs={12} lg={9}>
+                    <Grid container className="instagram" spacing={2}>
+                        <Grid item xs={12} lg={6}>
+                            <InstagramEmbed url='https://www.instagram.com/p/B9f530VDN8N/' />
+                        </Grid>
+                        <Grid item xs={12} lg={6}>
+                            <InstagramEmbed url='https://www.instagram.com/p/B8Vdd0CgpCN/' />
+                        </Grid>
+                        <Grid item xs={12} lg={6}>
+                            <InstagramEmbed url='https://www.instagram.com/p/B8VcGysgRaR/' />
+                        </Grid>
+                    </Grid>
+                </Grid>
+                <Grid item xs={12} lg={3}>
+                    <h1>Contact</h1>
+                    <p>Email: <a className="link" href="mailto:Mairs.arthur@gmail.com">Mairs.arthur@gmail.com</a></p>
+                    <p>Instagram: <a className="link" target="_blank" href="https://www.instagram.com/oddsandbobscreations">OddsandBobsCreations</a></p>
+                </Grid>
+            </Grid>
         );
     }
 }
