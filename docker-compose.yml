@@ -1,0 +1,30 @@
+version: '2'
+
+services:
+    web:
+        image: nginx:latest
+        ports:
+            - "8080:80"
+        volumes:
+            - ./api:/api
+            - ./site.conf:/etc/nginx/conf.d/default.conf
+        networks:
+            - code-network
+    php:
+        image: php:fpm
+        volumes:
+            - ./api:/api
+        networks:
+            - code-network
+    app:
+        build:
+            context: ./client/
+        command: npm start
+        volumes:
+            - ./client/:/usr/client
+            - /usr/client/node_modules
+        ports:
+            - "3000:3000"
+networks:
+    code-network:
+        driver: bridge
