@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/pixelcreations/public_html/
-    - /bin/cp -R client/build $DEPLOYPATH
+    - /bin/cp -R client/build/* $DEPLOYPATH
